@@ -2,7 +2,7 @@
 from endpoints.models.process_audio_response import response_model, ProcessApudioResponse
 import os
 import werkzeug
-import endpoints.parsers as parsers
+import endpoints.models.process_audio_request as process_audio_request
 from run import app, api, Resource, request, fields, abort, reqparse
 
 UPLOAD_DIRECTORY = "api_uploaded_files"
@@ -13,18 +13,18 @@ ns = api.namespace('ProcessAudio',
 
 @ns.route('/<file_id>')
 class ProcessAudioEndpoint(Resource):
-    @ns.expect(parsers.file_upload)
+    @ns.expect(process_audio_request.file_upload)
     @ns.marshal_with(response_model, mask=False, code=200)
     def post(self, file_id):
         if "/" in file_id:
             abort(400, 'no subdirectories directories allowed')
 
-        args = parsers.file_upload.parse_args()
+        args = process_audio_request.file_upload.parse_args()
         audio_file = args['audio_file']
         if audio_file is None:
             abort(400, 'file not found in request')
 
-        if audio_file.mimetype not in parsers.audio_mimetypes:
+        if audio_file.mimetype not in process_audio_request.audio_mimetypes:
             abort(400, 'file mimetype is not audio')
 
         destination = os.path.join(UPLOAD_DIRECTORY)
