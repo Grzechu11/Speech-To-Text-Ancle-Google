@@ -9,10 +9,18 @@ response_model = api.model('process_audio_response', {
 })
     
 class ProcessApudioResponse:
-  def __init__(self, file_name, text):
-    self.file_name = file_name
-    self.text = text
-          
-    now = datetime.now()
-    formatted_now = now.strftime("%A, %d %B, %Y at %X") 
-    self.processed_date = formatted_now 
+    def __init__(self, file_name, full_path):
+        self.file_name = file_name
+        self.full_path = full_path
+
+        now = datetime.now()
+        formatted_now = now.strftime("%A, %d %B, %Y at %X") 
+        self.processed_date = formatted_now 
+        
+        self.text = ''
+
+    def set_text(self, text):
+        self.text = text
+
+    def ask_uncle_google(self):
+        self.set_text('test')

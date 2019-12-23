@@ -34,5 +34,9 @@ class ProcessAudioEndpoint(Resource):
         audio_file_path = os.path.join(
             destination, '%s_%s' % (file_id, audio_file.filename))
         audio_file.save(audio_file_path)
+        file_to_process = ProcessApudioResponse(
+            audio_file.filename, audio_file_path)
 
-        return ProcessApudioResponse(audio_file_path, 'text')
+        file_to_process.ask_uncle_google()
+
+        return file_to_process
