@@ -20,6 +20,17 @@
                 "--no-reload"
             ],
             "jinja": true
+        },
+        {
+            "name": "Python: google s2t",
+            "type": "python",
+            "request": "launch",
+            "args": [
+                "run",
+                "--no-debugger",
+                "--no-reload"
+            ],
+            "jinja": true
         }
     ]
 }
