@@ -1,6 +1,6 @@
-# Flask sample project to ask google Text-to-Speech
+# Flask sample project to ask google Speech to Text
 
-This is sample project to host Flask with swagger and ask Text-to-Speech Ancle Google
+This is sample project to host Flask with swagger and ask Speech to Text Ancle Google
 
 ## Thanks
 
@@ -8,7 +8,7 @@ This is sample project to host Flask with swagger and ask Text-to-Speech Ancle G
 - [Docs]('https://python101.readthedocs.io/pl/latest/webflask/')
 - [Flask-RESTPlus]('https://flask-restplus.readthedocs.io/en/stable/quickstart.html#a-minimal-api')
 - [Visual Studio Code Tutorial]('https://code.visualstudio.com/docs/python/tutorial-flask')
-- [Cloud Text-to-Speech basics]('https://cloud.google.com/text-to-speech/docs/basics')
+- [Google Cloud Speech to Text]('https://cloud.google.com/speech-to-text/docs/')
 
 ## Useful commands
 
