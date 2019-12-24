@@ -70,3 +70,59 @@ where python
 Command Palette (View > Command Palette or (Ctrl+Shift+P)). Then select the Python: Select Interpreter.
 Select virtual environment. `./env/...` or `.\env\...`
 ```
+
+### Docker
+
+- check the docker version
+
+```powershell
+docker -v
+```
+
+- show any running containers
+
+```powershell
+docker ps
+```
+
+- kill docker container
+
+```powershell
+docker kill [CONTAINER_ID]
+```
+
+- show docker not running containers
+
+```powershell
+docker images
+```
+
+- clear all local docker stuff
+
+```powershell
+docker system prune -a
+```
+
+- Build docker images
+
+```powershell
+docker build -t [DOCKER_IMAGE_NAME]:[TAG] .
+```
+
+- - example
+
+```powershell
+docker build -t my_docker_flask:latest .
+```
+
+- Run docker images
+
+```powershell
+docker run -d -p [PORT_ON_HOST]:[PORT_ON_DOCKER_NETWORK] [DOCKER_IMAGE_NAME]:[TAG]
+```
+
+- - example
+
+```powershell
+docker run -d -p 5000:5000 my_docker_flask:latest
+```
