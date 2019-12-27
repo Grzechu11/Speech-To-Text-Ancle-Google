@@ -2,13 +2,20 @@
 
 This is sample project to host Flask with swagger and ask Speech to Text Ancle Google
 
+## IMPORTANT
+
+Toy need google API KEY: [Google API KEY](https://cloud.google.com/docs/authentication/api-keys)
+
+Download json file from google and save as `./keys/SpeechToText-google.json`
+
 ## Thanks
 
 - [Swagger](https://swagger.io/tools/swagger-ui/)
 - [Docs](https://python101.readthedocs.io/pl/latest/webflask/)
 - [Flask-RESTPlus](https://flask-restplus.readthedocs.io/en/stable/quickstart.html#a-minimal-api)
 - [Visual Studio Code Tutorial](https://code.visualstudio.com/docs/python/tutorial-flask)
-- [Google Cloud Speech to Text](https://cloud.google.com/speech-to-text/docs/)
+- [Google Cloud Speech to Text](https://cloud.google.com/speech-to-text/)
+- [Google API KEY](https://cloud.google.com/docs/authentication/api-keys)
 
 ## Useful commands
 
