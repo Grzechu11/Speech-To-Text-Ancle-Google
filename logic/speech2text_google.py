@@ -6,7 +6,7 @@ from google.cloud import speech
 from google.cloud.speech import enums
 from google.cloud.speech import types
 
-credential_path = "D:\SpeechToText-c6227aa5bf8d.json"
+credential_path = "./keys/SpeechToText-google.json"
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = credential_path
     
 class GoogleSpeechToText:

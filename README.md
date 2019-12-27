@@ -112,7 +112,7 @@ docker build -t [DOCKER_IMAGE_NAME]:[TAG] .
 - - example
 
 ```powershell
-docker build -t my_docker_flask:latest .
+docker build -t google_s2t:latest .
 ```
 
 - Run docker images
@@ -124,5 +124,5 @@ docker run -d -p [PORT_ON_HOST]:[PORT_ON_DOCKER_NETWORK] [DOCKER_IMAGE_NAME]:[TA
 - - example
 
 ```powershell
-docker run -d -p 5000:5000 my_docker_flask:latest
+docker run -d -p 5000:5000 google_s2t:latest
 ```
