@@ -4,11 +4,11 @@ This is sample project to host Flask with swagger and ask Speech to Text Ancle G
 
 ## Thanks
 
-- [Swagger]('https://swagger.io/tools/swagger-ui/')
-- [Docs]('https://python101.readthedocs.io/pl/latest/webflask/')
-- [Flask-RESTPlus]('https://flask-restplus.readthedocs.io/en/stable/quickstart.html#a-minimal-api')
-- [Visual Studio Code Tutorial]('https://code.visualstudio.com/docs/python/tutorial-flask')
-- [Google Cloud Speech to Text]('https://cloud.google.com/speech-to-text/docs/')
+- [Swagger](https://swagger.io/tools/swagger-ui/)
+- [Docs](https://python101.readthedocs.io/pl/latest/webflask/)
+- [Flask-RESTPlus](https://flask-restplus.readthedocs.io/en/stable/quickstart.html#a-minimal-api)
+- [Visual Studio Code Tutorial](https://code.visualstudio.com/docs/python/tutorial-flask)
+- [Google Cloud Speech to Text](https://cloud.google.com/speech-to-text/docs/)
 
 ## Useful commands
 
